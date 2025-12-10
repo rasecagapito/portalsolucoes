@@ -1,0 +1,8 @@
+SELECT
+  COUNT(cliente) AS total_clientes
+FROM public.cliente
+WHERE setor = 'New Name'
+  AND COALESCE(NULLIF(status2, ''), status) IN (
+    'Em execução',
+    'Agendado'
+  );

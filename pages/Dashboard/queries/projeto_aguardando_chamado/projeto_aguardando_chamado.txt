@@ -1,0 +1,9 @@
+SELECT
+id_planilha,
+cliente,
+chamado,
+setor,
+gerente
+FROM public.cliente
+WHERE chamado = 'Aguardando Chamado'
+ORDER by id_planilha;

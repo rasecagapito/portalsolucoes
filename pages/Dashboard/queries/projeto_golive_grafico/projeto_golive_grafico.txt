@@ -1,0 +1,8 @@
+SELECT
+  previsao_entrega2::date AS dia,
+  setor,
+  COUNT(*)               AS total
+FROM public.cliente
+WHERE status2 = 'Go-live agendado'
+GROUP BY dia, setor
+ORDER BY dia, setor;

@@ -1,0 +1,1 @@
+SELECT * FROM neon_auth."users_sync" LIMIT 10;

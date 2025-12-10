@@ -1,0 +1,1 @@
+SELECT COUNT(cliente) as "total_clientes" FROM public.cliente WHERE setor = 'Base' and status2 in( 'Finalizado','Go-live agendado')

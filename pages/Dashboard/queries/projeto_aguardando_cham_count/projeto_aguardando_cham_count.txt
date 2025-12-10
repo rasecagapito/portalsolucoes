@@ -1,0 +1,4 @@
+SELECT
+COUNT(id_planilha) as sem_chamado
+FROM public.cliente
+WHERE chamado = 'Aguardando Chamado';

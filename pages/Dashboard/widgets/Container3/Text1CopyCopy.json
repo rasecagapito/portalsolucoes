@@ -1,0 +1,53 @@
+{
+  "animateLoading": true,
+  "backgroundColor": "#be185d",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "Open Sans",
+  "fontSize": "1.875rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "9c6mquhanh",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 45,
+  "mobileLeftColumn": 21,
+  "mobileRightColumn": 37,
+  "mobileTopRow": 41,
+  "needsErrorInfo": false,
+  "originalBottomRow": 12,
+  "originalTopRow": 0,
+  "overflow": "NONE",
+  "parentColumnSpace": 16.296875,
+  "parentId": "pccolxxkp2",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "shouldTruncate": false,
+  "text": "{{ \"Inter.: \" + int_count_client.data[0].total_clientes }}",
+  "textAlign": "CENTER",
+  "textColor": "#fef9c3",
+  "topRow": 0,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "53ljd7shyq",
+  "widgetName": "Text1CopyCopy"
+}

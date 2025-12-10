@@ -1,0 +1,14 @@
+SELECT
+  id_planilha,
+  cliente,
+  chamado,
+  setor,
+  gerente,
+  apresentacao
+FROM public.cliente
+WHERE
+  COALESCE(NULLIF(apresentacao, ''), status) = 'Aguardando retorno do cliente'
+	AND data_apresentacao_planilha_cliente IS NULL
+  AND chamado <> 'Aguardando Chamado'
+	AND chamado <> ''
+ORDER BY id_planilha;

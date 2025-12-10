@@ -1,0 +1,49 @@
+SELECT
+  id,
+  cliente,
+  apresentacao,
+
+  -- DATA FORMATADA EM DD/MM/YYYY
+  to_char(data_apresentacao_planilha_cliente::date, 'DD/MM/YYYY')
+    AS data_apresentacao_planilha_cliente,
+
+  to_char(data_devolucao_planilha_cliente::date, 'DD/MM/YYYY')
+    AS data_devolucao_planilha_cliente,
+
+  to_char(data_entrega_configuracoes::date, 'DD/MM/YYYY')
+    AS data_entrega_configuracoes,
+
+  to_char(data_inicio_carga::date, 'DD/MM/YYYY')
+    AS data_inicio_carga,
+
+  to_char(previsao_entrega::date, 'DD/MM/YYYY')
+    AS previsao_entrega,
+
+  to_char(data_inicio_carga2::date, 'DD/MM/YYYY')
+    AS data_inicio_carga2,
+
+  to_char(previsao_entrega2::date, 'DD/MM/YYYY')
+    AS previsao_entrega2,
+
+  -- OS DEMAIS CAMPOS
+  setor,
+  chamado,
+  descricao,
+  add_on,
+  recurso_configuracao,
+  recurso_homologacao,
+  metodo,
+  recurso_producao,
+  metodo2,
+  status,
+  status2,
+  observacoes,
+  id_planilha
+  
+FROM cliente
+
+WHERE cliente IS NOT NULL
+
+ORDER BY id_planilha
+
+LIMIT 100;

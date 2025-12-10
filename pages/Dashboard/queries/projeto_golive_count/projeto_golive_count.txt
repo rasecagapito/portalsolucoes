@@ -1,0 +1,4 @@
+SELECT
+count(id_planilha) as golive
+FROM public.cliente
+WHERE status2 = 'Go-live agendado'
