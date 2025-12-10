@@ -1,1 +1,1 @@
-SELECT COUNT(cliente) as "total_finalizados" FROM public.cliente WHERE status2 in( 'Finalizado','Go-live agendado')
+SELECT COUNT(cliente) as "total_finalizados" FROM public.cliente WHERE status2 =  'Finalizado'

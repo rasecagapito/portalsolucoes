@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT COUNT(cliente) as \"total_finalizados\" FROM public.cliente WHERE status2 in( 'Finalizado','Go-live agendado')",
+      "body": "SELECT COUNT(cliente) as \"total_finalizados\" FROM public.cliente WHERE status2 =  'Finalizado'",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
