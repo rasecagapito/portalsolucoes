@@ -1,0 +1,62 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowScroll": false,
+  "animateLoading": true,
+  "borderRadius": "0.375rem",
+  "bottomRow": 161,
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+  "chartData": {
+    "mvkvqp9riw": {
+      "data": "",
+      "seriesName": "2023"
+    }
+  },
+  "chartName": "Sales Report",
+  "chartType": "CUSTOM_ECHART",
+  "customEChartConfig": "{{ ((chartType) => ( \n(() => {\n  const rows = projeto_golive_grafico.data || [];\n  if (!rows.length) return {};\n\n  // formata data ISO -> DD/MM\n  const fmt = (v) => {\n    if (!v) return '';\n    const d = new Date(v);\n    if (isNaN(d)) return String(v);\n    const dd = String(d.getDate()).padStart(2, '0');\n    const mm = String(d.getMonth() + 1).padStart(2, '0');\n    return `${dd}/${mm}`;\n  };\n\n  // eixo X: datas únicas ordenadas\n  const dias = [...new Set(rows.map(r => fmt(r.dia)))];\n\n  // legend / séries: setores únicos\n  const setors = [...new Set(rows.map(r => r.setor))];\n\n  const series = setors.map(setor => {\n    const data = dias.map(d => {\n      const item = rows.find(\n        r => fmt(r.dia) === d && r.setor === setor\n      );\n      return item ? Number(item.total) : 0;\n    });\n\n    return {\n      name: setor,\n      type: 'line',\n      stack: 'GoLive',\n      areaStyle: {},\n      emphasis: { focus: 'series' },\n      data\n    };\n  });\n\n  return {\n    title: {\n      text: 'Go-lives agendados por dia / setor',\n      left: 'center'\n    },\n    tooltip: {\n      trigger: 'axis',\n      axisPointer: {\n        type: 'cross',\n        label: { backgroundColor: '#6a7985' }\n      }\n    },\n    legend: {\n      top: 40,\n      type: 'scroll',\n      data: setors\n    },\n    grid: {\n      left: 15,\n      right: 15,\n      bottom: 30,\n      top: 100,\n      containLabel: true\n    },\n    xAxis: [\n      {\n        type: 'category',\n        boundaryGap: false,\n        data: dias      // ex.: [\"10/12\",\"11/12\",\"12/12\"...]\n      }\n    ],\n    yAxis: [\n      { type: 'value' }\n    ],\n    series\n  };\n})()\n))(Chart1.chartType) }}",
+  "customFusionChartConfig": "{{\n(() => {\n  const rows = projeto_golive_grafico.data|| [];\n  if (!rows.length) return {};\n\n  // dias no eixo X\n  const dias = [...new Set(rows.map(r => r.dia))].sort();\n\n  // setores (cada um vira uma série)\n  const setors = [...new Set(rows.map(r => r.setor))];\n\n  // séries por setor (stacked area)\n  const series = setors.map(s => ({\n    name: s,\n    type: 'line',\n    stack: 'Total',\n    areaStyle: {},\n    emphasis: { focus: 'series' },\n    data: dias.map(d => {\n      const item = rows.find(r => r.dia === d && r.setor === s);\n      return item ? Number(item.total) : 0;\n    })\n  }));\n\n  return {\n    title: { text: 'Go-lives agendados por dia / setor' },\n    tooltip: {\n      trigger: 'axis',\n      axisPointer: {\n        type: 'cross',\n        label: { backgroundColor: '#6a7985' }\n      }\n    },\n    legend: { data: setors },\n    toolbox: { feature: { saveAsImage: {} } },\n    xAxis: [{\n      type: 'category',\n      boundaryGap: false,\n      data: dias\n    }],\n    yAxis: [{ type: 'value' }],\n    series\n  };\n})()\n}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "customFusionChartConfig"
+    },
+    {
+      "key": "customEChartConfig"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ayh5kyyflw",
+  "labelOrientation": "auto",
+  "leftColumn": 34,
+  "minWidth": 450,
+  "mobileBottomRow": 160,
+  "mobileLeftColumn": 33,
+  "mobileRightColumn": 57,
+  "mobileTopRow": 128,
+  "needsErrorInfo": true,
+  "originalBottomRow": 161,
+  "originalTopRow": 113,
+  "parentColumnSpace": 19.515625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "showDataPointLabel": false,
+  "topRow": 113,
+  "type": "CHART_WIDGET",
+  "version": 1,
+  "widgetId": "y5b748lzzi",
+  "widgetName": "Chart1",
+  "xAxisName": "Product Line",
+  "yAxisName": "Revenue($)"
+}

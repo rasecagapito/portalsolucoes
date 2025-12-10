@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\ncount(id_planilha) as golive\nFROM public.cliente\nWHERE status2 = 'Go-live agendado'\n",
+      "body": "SELECT\nCOUNT(id_planilha) as golive\nFROM public.cliente\nWHERE status2 = 'Go-live agendado'\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -25,7 +25,7 @@
     "dynamicBindingPathList": [],
     "name": "projeto_golive_count",
     "pageId": "Dashboard",
-    "runBehaviour": "MANUAL",
-    "userSetOnLoad": false
+    "runBehaviour": "ON_PAGE_LOAD",
+    "userSetOnLoad": true
   }
 }
