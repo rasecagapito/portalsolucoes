@@ -1,0 +1,21 @@
+SELECT
+  u.id,
+  u.nome,
+  u.email,
+  u.id_filial,
+  u.ativo,
+  COALESCE(
+    array_agg(p.nome_perfil) FILTER (WHERE p.nome_perfil IS NOT NULL),
+    '{}'
+  ) AS roles
+FROM usuario u
+LEFT JOIN perfil p ON p.id = u.id_perfil
+WHERE u.email = {{ inp_login_01.text }}
+  AND u.password_hash = crypt({{ inp_login_02.text }}, u.password_hash)
+  AND u.ativo = TRUE
+GROUP BY
+  u.id,
+  u.nome,
+  u.email,
+  u.id_filial,
+  u.ativo;

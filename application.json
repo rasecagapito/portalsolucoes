@@ -7,7 +7,16 @@
     "appPositioning": {
       "type": "FIXED"
     },
-    "navigationSetting": {},
+    "navigationSetting": {
+      "colorStyle": "light",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "navStyle": "stacked",
+      "orientation": "top",
+      "position": "static",
+      "showNavbar": true,
+      "showSignIn": true
+    },
     "themeSetting": {
       "appMaxWidth": "LARGE",
       "density": 1.0,
@@ -30,7 +39,11 @@
       "isDefault": true
     },
     {
-      "id": "Dashboard",
+      "id": "Reforma Tributaria",
+      "isDefault": false
+    },
+    {
+      "id": "Principal_adm",
       "isDefault": false
     }
   ],
@@ -41,7 +54,16 @@
     "appPositioning": {
       "type": "FIXED"
     },
-    "navigationSetting": {},
+    "navigationSetting": {
+      "colorStyle": "light",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "navStyle": "stacked",
+      "orientation": "top",
+      "position": "static",
+      "showNavbar": true,
+      "showSignIn": true
+    },
     "themeSetting": {
       "appMaxWidth": "LARGE",
       "density": 1.0,

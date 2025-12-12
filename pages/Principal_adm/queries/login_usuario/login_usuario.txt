@@ -1,0 +1,8 @@
+SELECT
+u.nome as nome,
+u.email as email,
+u.id_filial as id_filial,
+r.nome_filial as nome_filial
+
+FROM usuario u
+LEFT JOIN filial r ON u.id_filial = r.id

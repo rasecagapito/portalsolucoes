@@ -1,24 +1,24 @@
 {
-  "gitSyncId": "6932cad5e61f724d728339a7_271ba3a1-a3d8-4f2b-a788-4f87e6fb2daa",
+  "gitSyncId": "6932cad5e61f724d728339a7_1c690a10-3256-452b-aec2-560e7b32e117",
   "unpublishedPage": {
-    "customSlug": "",
-    "isHidden": true,
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 1320,
+          "bottomRow": 2210,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
+          "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 530,
+          "minHeight": 1292,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 1224,
+          "rightColumn": 4896,
           "snapColumns": 64,
-          "snapRows": 51,
+          "snapRows": 124,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 94,
@@ -27,7 +27,7 @@
         }
       }
     ],
-    "name": "Login",
-    "slug": "login"
+    "name": "Reforma Tributaria",
+    "slug": "reforma-tributaria"
   }
 }

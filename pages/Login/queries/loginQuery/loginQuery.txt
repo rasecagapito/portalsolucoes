@@ -1,0 +1,12 @@
+SELECT 
+u.id,
+u.nome,
+u.email,
+u.password_hash,
+u.id_filial,
+u.id_perfil,
+u.status
+FROM usuario u
+LEFT JOIN filial f on f.id= u.id_filial
+WHERE	u.email = {{inp_login_01.text}}
+	and u.password_hash = {{inp_login_02.text}}
