@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 22,
+  "bottomRow": 21,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -12,6 +12,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "labelTextColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -27,9 +30,10 @@
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
+  "labelTextColor": "{{appsmith.theme.colors.backgroundColor}}",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 17,
+  "leftColumn": 7,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -38,18 +42,18 @@
   "mobileRightColumn": 40,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 22,
-  "originalTopRow": 16,
+  "originalBottomRow": 21,
+  "originalTopRow": 15,
   "parentColumnSpace": 7.005859375,
   "parentId": "15i4hcj58x",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 54,
+  "rightColumn": 55,
   "shouldAllowAutofill": true,
   "showStepArrows": false,
-  "topRow": 16,
+  "topRow": 15,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "ng0wo3yusr",
