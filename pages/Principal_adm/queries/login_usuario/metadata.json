@@ -25,7 +25,7 @@
     "dynamicBindingPathList": [],
     "name": "login_usuario",
     "pageId": "Principal_adm",
-    "runBehaviour": "MANUAL",
-    "userSetOnLoad": false
+    "runBehaviour": "ON_PAGE_LOAD",
+    "userSetOnLoad": true
   }
 }

@@ -14,6 +14,9 @@
     },
     {
       "key": "text"
+    },
+    {
+      "key": "textColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -45,7 +48,7 @@
   "shouldTruncate": false,
   "text": "{{\n(() => {\n  const total = Number(projetos_totais.data?.[0]?.total_clientes ?? 0);\n  const done  = Number(total_finalizados.data?.[0]?.total_finalizados ?? 0);\n\n  if (!total) return \"Sem dados\";\n\n  const falta = total - done;\n  const perc  = (done / total) * 100;\n\n  return `Concluídos: ${done}/${total} | Falta: ${falta} (${perc.toFixed(0)}%)`;\n})()\n}}\n",
   "textAlign": "CENTER",
-  "textColor": "#18181b",
+  "textColor": "{{appsmith.theme.colors.backgroundColor}}",
   "topRow": 10,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",

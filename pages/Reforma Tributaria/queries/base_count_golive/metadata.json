@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6932cad5e61f724d728339a7_237fdf58-1984-49da-9dc4-d61f2f105bef",
-  "id": "Reforma Tributaria_int_count_finalizado",
+  "gitSyncId": "6932cad5e61f724d728339a7_30c265b2-8417-4b47-8d48-ec67fcf6b6c3",
+  "id": "Reforma Tributaria_base_count_golive",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT COUNT(cliente) as \"total_clientes\" FROM public.cliente WHERE setor = 'Internacional' and status2 in( 'Finalizado')",
+      "body": "SELECT\n  COUNT(cliente) AS total_clientes\nFROM public.cliente\nWHERE setor = 'Base' and status2 = 'Go-live agendado'",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -23,9 +23,9 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "int_count_finalizado",
+    "name": "base_count_golive",
     "pageId": "Reforma Tributaria",
-    "runBehaviour": "ON_PAGE_LOAD",
-    "userSetOnLoad": true
+    "runBehaviour": "AUTOMATIC",
+    "userSetOnLoad": false
   }
 }

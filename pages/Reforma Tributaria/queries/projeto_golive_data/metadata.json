@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \ncliente,\nsetor,\nstatus2,\n  -- DATA FORMATADA EM DD/MM/YYYY\n  to_char(data_inicio_carga2::date, 'DD/MM/YYYY')\n    AS data_inicio_carga2,\n\t\t\n  -- DATA FORMATADA EM DD/MM/YYYY\n  to_char(previsao_entrega2::date, 'DD/MM/YYYY')\n    AS previsao_entrega2\n\nFROM public.cliente\nWHERE status2 = 'Go-live agendado'",
+      "body": "SELECT \ncliente,\nsetor,\nrecurso_producao,\ngerente,\nchamado,\nstatus2,\n  -- DATA FORMATADA EM DD/MM/YYYY\n  to_char(data_inicio_carga2::date, 'DD/MM/YYYY')\n    AS data_inicio_carga2,\n\t\t\n  -- DATA FORMATADA EM DD/MM/YYYY\n  to_char(previsao_entrega2::date, 'DD/MM/YYYY')\n    AS previsao_entrega2\n\nFROM public.cliente\nWHERE status2 = 'Go-live agendado'",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

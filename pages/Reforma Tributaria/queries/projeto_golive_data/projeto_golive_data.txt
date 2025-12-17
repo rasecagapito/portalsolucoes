@@ -1,6 +1,9 @@
 SELECT 
 cliente,
 setor,
+recurso_producao,
+gerente,
+chamado,
 status2,
   -- DATA FORMATADA EM DD/MM/YYYY
   to_char(data_inicio_carga2::date, 'DD/MM/YYYY')

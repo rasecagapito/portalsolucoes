@@ -1,11 +1,11 @@
 {
   "gitSyncId": "6932cad5e61f724d728339a7_3c4f1b31-71fb-4304-b656-d0a79e6856de",
-  "id": "Reforma Tributaria_projeto_aguardando_retorno",
+  "id": "Reforma Tributaria_projeto_aguardando_ret_vazio",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n  id_planilha,\n  cliente,\n  chamado,\n  setor,\n  gerente,\n  apresentacao\nFROM public.cliente\nWHERE\n  COALESCE(NULLIF(apresentacao, ''), status) = 'Aguardando retorno do cliente'\n\tAND data_apresentacao_planilha_cliente IS NULL\n  AND chamado <> 'Aguardando Chamado'\n\tAND chamado <> ''\nORDER BY id_planilha;",
+      "body": "SELECT\n  id_planilha,\n  cliente,\n  chamado,\n  setor,\n  gerente,\n  apresentacao\nFROM public.cliente\n\nWHERE\n chamado ISNULL\n AND cliente <> ''\n AND \n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -23,7 +23,7 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "projeto_aguardando_retorno",
+    "name": "projeto_aguardando_ret_vazio",
     "pageId": "Reforma Tributaria",
     "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": true

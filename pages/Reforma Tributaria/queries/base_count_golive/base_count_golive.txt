@@ -1,4 +1,4 @@
 SELECT
   COUNT(cliente) AS total_clientes
 FROM public.cliente
-WHERE setor = 'Base' AND chamado = 'Aguardando Chamado';
+WHERE setor = 'Base' and status2 = 'Go-live agendado'

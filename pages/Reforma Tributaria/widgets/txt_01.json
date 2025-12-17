@@ -1,14 +1,17 @@
 {
   "animateLoading": true,
-  "backgroundColor": "#be185d",
+  "backgroundColor": "#233229",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 9,
+  "bottomRow": 10,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "textColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -28,8 +31,8 @@
   "mobileRightColumn": 17,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "originalBottomRow": 9,
-  "originalTopRow": 4,
+  "originalBottomRow": 10,
+  "originalTopRow": 5,
   "overflow": "NONE",
   "parentColumnSpace": 16.296875,
   "parentId": "0",
@@ -40,8 +43,8 @@
   "shouldTruncate": false,
   "text": "ANALISE REFORMA TRIBUTÁRIA",
   "textAlign": "CENTER",
-  "textColor": "#fef9c3",
-  "topRow": 4,
+  "textColor": "{{appsmith.theme.colors.backgroundColor}}",
+  "topRow": 5,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

@@ -1,14 +1,11 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 6,
   "boxShadow": "none",
-  "buttonColor": "{{appsmith.theme.colors.backgroundColor}}",
-  "buttonVariant": "PRIMARY",
+  "buttonColor": "",
+  "buttonVariant": "TERTIARY",
   "dynamicBindingPathList": [
-    {
-      "key": "buttonColor"
-    },
     {
       "key": "borderRadius"
     }
@@ -28,7 +25,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "hp643drpsx",
-  "leftColumn": 62,
+  "leftColumn": 61,
   "minWidth": 50,
   "mobileBottomRow": 4,
   "mobileLeftColumn": 61,
@@ -37,12 +34,12 @@
   "needsErrorInfo": false,
   "onClick": "{{navigateTo(\"Login\")}}",
   "parentColumnSpace": 19.515625,
-  "parentId": "0",
+  "parentId": "z6le9e73ug",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 64,
-  "topRow": 0,
+  "rightColumn": 63,
+  "topRow": 2,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
   "widgetId": "nnaeai4wcg",

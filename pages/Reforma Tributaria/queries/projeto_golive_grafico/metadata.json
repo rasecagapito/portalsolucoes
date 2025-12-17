@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n  previsao_entrega2::date AS dia,\n  setor,\n  COUNT(*) AS total\nFROM public.cliente\nWHERE status2 = 'Go-live agendado'\nGROUP BY dia, setor\nORDER BY dia, setor;",
+      "body": "WITH dias AS (\n  SELECT generate_series(\n    current_date - interval '6 day',\n    current_date,\n    interval '1 day'\n  )::date AS dia\n),\nbase AS (\n  SELECT\n    previsao_entrega2::date AS dia,\n    setor,\n    COUNT(*)::int AS total\n  FROM public.cliente\n  WHERE status2 = 'Go-live agendado'\n    AND previsao_entrega2::date >= current_date - interval '6 day'\n  GROUP BY 1,2\n)\nSELECT d.dia, b.setor, COALESCE(b.total,0) AS total\nFROM dias d\nLEFT JOIN base b ON b.dia = d.dia\nORDER BY d.dia, b.setor;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

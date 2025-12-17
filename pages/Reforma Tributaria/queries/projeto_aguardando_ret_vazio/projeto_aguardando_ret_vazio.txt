@@ -1,0 +1,13 @@
+SELECT
+  id_planilha,
+  cliente,
+  chamado,
+  setor,
+  gerente,
+  apresentacao
+FROM public.cliente
+
+WHERE
+ chamado ISNULL
+ AND cliente <> ''
+ AND 

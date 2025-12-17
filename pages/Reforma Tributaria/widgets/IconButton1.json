@@ -3,31 +3,19 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
   "boxShadow": "none",
-  "buttonColor": "{{appsmith.theme.colors.backgroundColor}}",
+  "buttonColor": "#233229",
   "buttonVariant": "PRIMARY",
   "dynamicBindingPathList": [
-    {
-      "key": "buttonColor"
-    },
     {
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
-  "iconName": "log-out",
+  "dynamicTriggerPathList": [],
+  "iconName": "log-in",
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "hp643drpsx",
+  "key": "wxr86prp1d",
   "leftColumn": 61,
   "minWidth": 50,
   "mobileBottomRow": 4,
@@ -35,16 +23,15 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClick": "{{navigateTo(\"Login\")}}",
   "parentColumnSpace": 19.515625,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 63,
+  "rightColumn": 64,
   "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "n5xaaorttv",
+  "widgetId": "z5cnt5q6vj",
   "widgetName": "IconButton1"
 }

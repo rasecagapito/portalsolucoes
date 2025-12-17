@@ -25,7 +25,7 @@
     "dynamicBindingPathList": [],
     "name": "login_usuario",
     "pageId": "Reforma Tributaria",
-    "runBehaviour": "MANUAL",
-    "userSetOnLoad": false
+    "runBehaviour": "ON_PAGE_LOAD",
+    "userSetOnLoad": true
   }
 }

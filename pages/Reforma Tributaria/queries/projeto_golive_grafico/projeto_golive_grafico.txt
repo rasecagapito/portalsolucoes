@@ -1,8 +1,21 @@
-SELECT
-  previsao_entrega2::date AS dia,
-  setor,
-  COUNT(*) AS total
-FROM public.cliente
-WHERE status2 = 'Go-live agendado'
-GROUP BY dia, setor
-ORDER BY dia, setor;
+WITH dias AS (
+  SELECT generate_series(
+    current_date - interval '6 day',
+    current_date,
+    interval '1 day'
+  )::date AS dia
+),
+base AS (
+  SELECT
+    previsao_entrega2::date AS dia,
+    setor,
+    COUNT(*)::int AS total
+  FROM public.cliente
+  WHERE status2 = 'Go-live agendado'
+    AND previsao_entrega2::date >= current_date - interval '6 day'
+  GROUP BY 1,2
+)
+SELECT d.dia, b.setor, COALESCE(b.total,0) AS total
+FROM dias d
+LEFT JOIN base b ON b.dia = d.dia
+ORDER BY d.dia, b.setor;

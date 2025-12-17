@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n  COUNT(cliente) AS total_clientes\nFROM public.cliente\nWHERE setor = 'New Name'\n  AND COALESCE(NULLIF(status2, ''), status) IN (\n    'Não configurado por Soluções'\n  );",
+      "body": "SELECT\n  COUNT(cliente) AS total_clientes\nFROM public.cliente\nWHERE setor = 'New Name' AND chamado = 'Aguardando Chamado';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
