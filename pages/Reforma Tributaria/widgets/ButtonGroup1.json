@@ -44,10 +44,11 @@
           "isDisabled": false,
           "isVisible": true,
           "label": "Menu Principal",
-          "onClick": "{{ \n  clearStore();\n  navigateTo(\"Principal_adm\");\n}}\n",
+          "onClick": "{{ \n  navigateTo(\"Principal_adm\");\n}}\n",
           "widgetId": ""
         }
       },
+      "onClick": "{{}}",
       "placement": "CENTER",
       "widgetId": ""
     }
