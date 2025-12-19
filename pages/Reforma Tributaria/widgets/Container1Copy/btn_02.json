@@ -1,0 +1,41 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonColor": "",
+  "buttonVariant": "TERTIARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "iconName": "log-in",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "wxr86prp1d",
+  "leftColumn": 62,
+  "minWidth": 50,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 61,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onClick": "{{}}",
+  "originalBottomRow": 60,
+  "originalTopRow": 56,
+  "parentColumnSpace": 19.515625,
+  "parentId": "jyj284qbbt",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "topRow": 0,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "t0s9iqiaz5",
+  "widgetName": "btn_02"
+}

@@ -12,6 +12,15 @@
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "groupButtons.groupButton3.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem1.backgroundColor"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem1.textColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -26,7 +35,7 @@
   ],
   "groupButtons": {
     "groupButton3": {
-      "buttonColor": "#233229",
+      "buttonColor": "{{appsmith.theme.colors.backgroundColor}}",
       "buttonType": "MENU",
       "disabledWhenInvalid": false,
       "iconName": "widget-header",
@@ -37,14 +46,16 @@
       "label": "Menu",
       "menuItems": {
         "menuItem1": {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "{{appsmith.theme.colors.primaryColor}}",
           "disabledWhenInvalid": false,
+          "iconColor": "",
           "id": "menuItem1",
           "index": 0,
           "isDisabled": false,
           "isVisible": true,
           "label": "Menu Principal",
           "onClick": "{{ \n  navigateTo(\"Principal_adm\");\n}}\n",
+          "textColor": "{{appsmith.theme.colors.backgroundColor}}",
           "widgetId": ""
         }
       },
@@ -57,7 +68,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "nlzsbc3f2a",
-  "leftColumn": 56,
+  "leftColumn": 57,
   "minWidth": 450,
   "mobileBottomRow": 4,
   "mobileLeftColumn": 25,
@@ -66,11 +77,11 @@
   "needsErrorInfo": false,
   "orientation": "horizontal",
   "parentColumnSpace": 19.515625,
-  "parentId": "0",
+  "parentId": "jyj284qbbt",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 61,
+  "rightColumn": 62,
   "topRow": 0,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,

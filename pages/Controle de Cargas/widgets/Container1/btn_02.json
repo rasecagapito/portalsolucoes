@@ -3,8 +3,8 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
   "boxShadow": "none",
-  "buttonColor": "#233229",
-  "buttonVariant": "PRIMARY",
+  "buttonColor": "",
+  "buttonVariant": "TERTIARY",
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
@@ -16,15 +16,17 @@
   "isLoading": false,
   "isVisible": true,
   "key": "wxr86prp1d",
-  "leftColumn": 61,
+  "leftColumn": 62,
   "minWidth": 50,
   "mobileBottomRow": 4,
   "mobileLeftColumn": 61,
   "mobileRightColumn": 64,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
+  "originalBottomRow": 60,
+  "originalTopRow": 56,
   "parentColumnSpace": 19.515625,
-  "parentId": "0",
+  "parentId": "6oco02syaj",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
@@ -32,6 +34,6 @@
   "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "z5cnt5q6vj",
-  "widgetName": "IconButton1"
+  "widgetId": "dcbe5zozgo",
+  "widgetName": "btn_02"
 }

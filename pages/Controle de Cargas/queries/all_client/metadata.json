@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6932cad5e61f724d728339a7_db953d8a-c6ba-4214-867e-9c914a6644d3",
-  "id": "Reforma Tributaria_all_client",
+  "gitSyncId": "6932cad5e61f724d728339a7_5cba9427-afdf-433b-ad3e-166c53ce5ebf",
+  "id": "Controle de Cargas_all_client",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,8 +24,8 @@
     },
     "dynamicBindingPathList": [],
     "name": "all_client",
-    "pageId": "Reforma Tributaria",
-    "runBehaviour": "ON_PAGE_LOAD",
-    "userSetOnLoad": true
+    "pageId": "Controle de Cargas",
+    "runBehaviour": "MANUAL",
+    "userSetOnLoad": false
   }
 }

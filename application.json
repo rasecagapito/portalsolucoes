@@ -45,6 +45,10 @@
     {
       "id": "Principal_adm",
       "isDefault": false
+    },
+    {
+      "id": "Controle de Cargas",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

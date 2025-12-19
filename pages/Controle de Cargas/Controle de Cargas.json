@@ -1,24 +1,23 @@
 {
-  "gitSyncId": "6932cad5e61f724d728339a7_1c690a10-3256-452b-aec2-560e7b32e117",
+  "gitSyncId": "6932cad5e61f724d728339a7_7fdfc50f-a7c8-4fef-9b5b-d2e06681a6ff",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 2220,
+          "bottomRow": 380,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 1292,
+          "minHeight": 660,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 4896,
+          "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 124,
+          "snapRows": 64,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 94,
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "Reforma Tributaria",
-    "slug": "reforma-tributaria"
+    "name": "Controle de Cargas",
+    "slug": "controle-de-cargas"
   }
 }

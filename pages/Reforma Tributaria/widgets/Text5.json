@@ -2,7 +2,7 @@
   "animateLoading": true,
   "backgroundColor": "#233229",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 120,
+  "bottomRow": 118,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -38,8 +38,8 @@
   "mobileRightColumn": 17,
   "mobileTopRow": 111,
   "needsErrorInfo": false,
-  "originalBottomRow": 120,
-  "originalTopRow": 116,
+  "originalBottomRow": 118,
+  "originalTopRow": 114,
   "overflow": "NONE",
   "parentColumnSpace": 19.515625,
   "parentId": "0",
@@ -51,7 +51,7 @@
   "text": "{{\"Go-lives Agendados: \"+projeto_golive_count.data[0].golive }}",
   "textAlign": "CENTER",
   "textColor": "{{appsmith.theme.colors.backgroundColor}}",
-  "topRow": 116,
+  "topRow": 114,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

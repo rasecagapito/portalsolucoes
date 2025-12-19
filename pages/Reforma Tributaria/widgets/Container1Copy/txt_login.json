@@ -14,6 +14,9 @@
     },
     {
       "key": "text"
+    },
+    {
+      "key": "textColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -23,33 +26,33 @@
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "fdchn5yw93",
+  "key": "jhv6dxvsoe",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
   "mobileBottomRow": 4,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 8,
+  "mobileRightColumn": 5,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 4,
-  "originalTopRow": 0,
+  "originalBottomRow": 17,
+  "originalTopRow": 13,
   "overflow": "NONE",
   "parentColumnSpace": 19.515625,
-  "parentId": "0",
+  "parentId": "jyj284qbbt",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 20,
+  "rightColumn": 22,
   "shouldTruncate": false,
   "text": "Olá, <b style=\"color:#0066ff\">{{ appsmith.store.user.nome }}</b>, você está logado na <b>{{ appsmith.store.user.nome_filial }}</b>",
   "textAlign": "LEFT",
-  "textColor": "#231F20",
+  "textColor": "{{appsmith.theme.colors.backgroundColor}}",
   "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "1ti9r9qjnz",
-  "widgetName": "txt_log"
+  "widgetId": "5f38mclf19",
+  "widgetName": "txt_login"
 }
