@@ -1,0 +1,7 @@
+SELECT
+  'Registros carregados - ' || mensagem || ' - ' ||
+  TO_CHAR(data, 'DD/MM/YYYY') || ' - ' ||
+  empresa || ' - ' || recurso || ' - ' || time AS carga_realizada
+FROM log_carga
+ORDER BY data DESC, time DESC
+LIMIT 1;

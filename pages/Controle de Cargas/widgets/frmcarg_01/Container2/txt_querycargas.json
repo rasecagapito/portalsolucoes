@@ -1,53 +1,63 @@
 {
   "animateLoading": true,
-  "backgroundColor": "",
+  "backgroundColor": "#ffffff",
+  "borderColor": "{{appsmith.theme.colors.backgroundColor}}",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 4,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
     },
     {
+      "key": "fontFamily"
+    },
+    {
       "key": "borderRadius"
     },
     {
+      "key": "text"
+    },
+    {
       "key": "textColor"
+    },
+    {
+      "key": "borderColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
-  "fontFamily": "Open Sans",
-  "fontSize": "1.875rem",
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "hlko3ldk20",
+  "key": "vvdj7gok6a",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 5,
-  "mobileLeftColumn": 4,
-  "mobileRightColumn": 20,
-  "mobileTopRow": 1,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 16,
+  "mobileTopRow": 9,
   "needsErrorInfo": false,
   "originalBottomRow": 5,
   "originalTopRow": 0,
   "overflow": "NONE",
-  "parentColumnSpace": 6.700927734375,
-  "parentId": "15i4hcj58x",
+  "parentColumnSpace": 4.261474609375,
+  "parentId": "r7hytcd170",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
+  "rightColumn": 56,
   "shouldTruncate": false,
-  "text": "Login",
-  "textAlign": "CENTER",
-  "textColor": "{{appsmith.theme.colors.backgroundColor}}",
+  "text": "{{ log_carga.data?.[0]?.carga_realizada || \"\" }}",
+  "textAlign": "LEFT",
+  "textColor": "{{appsmith.theme.colors.primaryColor}}",
   "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "tsx6jkxtz9",
-  "widgetName": "Text1"
+  "widgetId": "epqmklttrq",
+  "widgetName": "txt_querycargas"
 }

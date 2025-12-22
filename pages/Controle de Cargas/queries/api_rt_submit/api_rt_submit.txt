@@ -1,0 +1,4 @@
+{
+  "usuario": "{{appsmith.user.email}}",
+  "filialId": "{{appsmith.store.filialId}}"
+}

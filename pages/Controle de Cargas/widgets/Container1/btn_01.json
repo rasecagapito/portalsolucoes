@@ -30,7 +30,7 @@
   "groupButtons": {
     "groupButton3": {
       "buttonColor": "{{appsmith.theme.colors.backgroundColor}}",
-      "buttonType": "SIMPLE",
+      "buttonType": "MENU",
       "disabledWhenInvalid": false,
       "iconName": "widget-header",
       "id": "groupButton3",
