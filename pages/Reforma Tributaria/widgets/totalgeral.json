@@ -2,7 +2,7 @@
   "animateLoading": true,
   "backgroundColor": "#233229",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 80,
+  "bottomRow": 77,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -34,8 +34,8 @@
   "mobileRightColumn": 37,
   "mobileTopRow": 41,
   "needsErrorInfo": false,
-  "originalBottomRow": 80,
-  "originalTopRow": 75,
+  "originalBottomRow": 77,
+  "originalTopRow": 72,
   "overflow": "NONE",
   "parentColumnSpace": 16.296875,
   "parentId": "0",
@@ -47,7 +47,7 @@
   "text": "{{ \"Projetos: \" + projetos_totais.data[0].total_clientes\n}}",
   "textAlign": "CENTER",
   "textColor": "{{appsmith.theme.colors.backgroundColor}}",
-  "topRow": 75,
+  "topRow": 72,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

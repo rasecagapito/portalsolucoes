@@ -1,0 +1,9 @@
+SELECT
+id_planilha,
+cliente,
+chamado,
+setor,
+gerente
+FROM public.cliente
+WHERE status2 = 'Aguardando Data Go-live'
+ORDER by id_planilha;

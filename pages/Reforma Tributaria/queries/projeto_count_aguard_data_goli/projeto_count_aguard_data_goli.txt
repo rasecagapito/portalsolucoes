@@ -1,0 +1,4 @@
+SELECT
+COUNT(id_planilha) as "Aguardado_gerente"
+FROM public.cliente
+WHERE status2 = 'Aguardando Data Go-live'
